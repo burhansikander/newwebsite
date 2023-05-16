@@ -1,0 +1,7 @@
+---
+- name: WEBSITE HOST USING DOCKER AND ANSIBLE
+  hosts: all
+  tasks:
+
+    - name: RUN DOCKER CONTAINER
+      command: "docker run -d --name my-running-app -p 8080:80 httpd:2.4"
